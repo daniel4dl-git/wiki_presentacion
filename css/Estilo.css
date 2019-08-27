@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+* {
+    margin:0px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    padding:0px;
+}
+
+header{
+display: block;
+    margin: auto;
+   background-color:black;
+width: 65%;
+
+}
+
+body{
+    font-family: 'Alegreya', serif;
+    background-image:url("../img/Wiki-background.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.submenu{
+    
+	position: absolute;
+    background:#212F3D ;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.content-menu{
+    background:#212F3D ;
+    
+    height: 7%;
+}
+.menu{
+    padding: 5px;
+display: block;
+    margin: auto;
+    
+}
+
+.menu  li{
+    list-style: none;
+    position: relative;
+	display: inline-block;
+}
+
+.menu li a{
+    font-size: 25px;
+    padding: 12px;
+    
+    text-decoration: none;
+    color: white;
+   
+}
+.menu  li a:hover{
+  color: aqua;
+  	transition: all .3s;
+}
+
+footer{
+display: block;
+    margin: auto;
+    background:#212F3D ;
+width: 65%;
+
+    
+}
+.git{
+ width: 8%;
+    padding: 8px;
+   
+    position:relative;
+  
+  left:29.5%;
+  
+  
+}
+.face{
+     width: 8%;
+    padding: 5px;
+    position:relative;
+  left:54.5%;
+}
+
+
+
+
+
+.foto{
+  display: block;
+ margin: auto;
+width: 45%;
+    
+padding: 25px;
+  z-index: -1;
+}
+.kanon{
+    width:21.8%;
+    position:absolute;
+    top: -1%;
+    left : 4%;
+    z-index: 1; 
+}
+
+.marible{
+    width:23.8%;
+    position:absolute;
+    top: -1%;
+    left : 72.5%;
+    z-index: 1; 
+}
+main{
+      border: 1px solid black;
+
+background:rgba(255,255,255, 0.5);
+    padding: 20px;
+display: block;
+margin: auto;
+    width: 65%;
+    
+text-align: center;
+}
+
+h2{
+    padding: 10px;
+}
+
+
+
+.slideshow{
+display:block;
+margin:auto;
+    
+	width: 30%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 100%;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider .caption h1{
+	font-size: 50px;
+}
+
+.slider .caption p{
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.pagination{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+    background:#212F3D ;
+
+	width: 65%;
+
+
+}
